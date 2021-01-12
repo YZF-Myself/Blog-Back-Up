@@ -168,7 +168,9 @@ def git_operation():
     '''
     os.system('git add .')
     os.system('git commit -m "add photos"')
+    os.system('git remote add origin  git@gitee.com:yzfssg/Blog-Back-Up.git')
     os.system('git push origin master')
+    
 
 if __name__ == "__main__":
     cut_photo()        # 裁剪图片，裁剪成正方形，去中间部分
